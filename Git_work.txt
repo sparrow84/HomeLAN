@@ -1,0 +1,9 @@
+REM Before start
+git pull
+
+REM Now work
+
+REM After work
+git add *
+git commit -m "%DATE%"
+git push origin master
