@@ -30,12 +30,13 @@ CREATE TABLE DevInPlace (
 
 /** /
 -- Наполняем таблицу Places
-INSERT INTO places (name, width, length, height) VALUES ('storage', 10000, 10000, 2500);
+INSERT INTO places (name, width, length, height) VALUES ('Storage', 10000, 10000, 2500);
 INSERT INTO places (name, width, length, height) VALUES ('Department of IT', 5000, 3000, 2500);
 INSERT INTO places (name, width, length, height) VALUES ('Classroom', 10000, 15000, 2500);
 INSERT INTO places (name, width, length, height) VALUES ('director office', 4000, 3000, 2500);
 INSERT INTO places (name, width, length, height) VALUES ('Computer room', 5000, 10000, 2500);
 /**/
+-- UPDATE places SET name = 'Storage' WHERE id = 1;
 
 /** /
 -- Наполняем таблицу Devices
