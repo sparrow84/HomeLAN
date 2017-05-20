@@ -36,7 +36,6 @@ INSERT INTO places (name, width, length, height) VALUES ('Classroom', 10000, 150
 INSERT INTO places (name, width, length, height) VALUES ('director office', 4000, 3000, 2500);
 INSERT INTO places (name, width, length, height) VALUES ('Computer room', 5000, 10000, 2500);
 /**/
--- UPDATE places SET name = 'Storage' WHERE id = 1;
 
 /** /
 -- Наполняем таблицу Devices

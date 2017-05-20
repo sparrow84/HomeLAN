@@ -43,7 +43,7 @@ public class TS001 extends HttpServlet {
         Class.forName("com.mysql.jdbc.Driver");
 //        Class.forName("org.postgresql.Driver");
         
-        String url = "jdbc:mysql://localhost:3306/testdbvva?autoReconnect=true&useSSL=false";
+        String url = "jdbc:mysql://localhost:3306/home_lan_base?autoReconnect=true&useSSL=false";
 //        String url = "jdbc:postgresql://localhost:5432/postgres";
 
         Connection con = DriverManager.getConnection(url, "root", "183461");
@@ -51,22 +51,37 @@ public class TS001 extends HttpServlet {
         
         Statement stmt = con.createStatement();
         
-//        stmt.executeQuery("SELECT prj_name FROM projects WHERE prj_id NOT IN (SELECT dp_prj_id FROM dev_prj)");
-
-        ResultSet rs = stmt.executeQuery("SELECT * FROM Devices");
+        ResultSet rs = stmt.executeQuery("SELECT name,(SELECT name FROM Places WHERE id=placeId) AS place FROM Devices");
+        
+        
+        // Создаём изменяймые строки для заиси результата запроса
+        StringBuilder sb = new StringBuilder();
+        
+        sb.append("<table border=1, align=left> <tr> <th><h2>Comp name</h2></th>   <th><h2>Place</h2></th> </tr>");
         
         while (rs.next()){
-            Long name = rs.getLong("name");
-            String placeId = rs.getString("placeId");
+            String name = rs.getString("name");
+            String place = rs.getString("place");
             
-            
-            request.setAttribute("DevName", name);
-            request.setAttribute("DevPlaceId", placeId);
+            sb.append("<tr align=left> <th>").append(name).append("</th> <th>").append(place).append("</th> </tr>");
             
         }
         
+        /*
         
+        <table>
+        <tr> <th>Month</th>   <th>Savings</th> </tr>
+        <tr> <td>January</td> <td>$100</td>    </tr>
+        </table>
         
+        */
+        
+        sb.append("</table>");
+        
+        String DevTable;
+        DevTable = sb.toString();
+        
+        request.setAttribute("DevTable", DevTable);
         
         getServletContext().getRequestDispatcher("/jsp001.jsp").forward(request, response);
         

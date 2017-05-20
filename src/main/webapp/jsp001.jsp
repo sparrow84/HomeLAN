@@ -12,13 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!!!!</h1>
+        <h1>Table viewer.</h1>
         
-        ${DevName}
-        ${DevPlaceId}
-        
-  
-        
-        
+        ${DevTable}
+
     </body>
 </html>
