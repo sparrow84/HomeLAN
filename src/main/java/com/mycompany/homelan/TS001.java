@@ -51,6 +51,7 @@ public class TS001 extends HttpServlet {
         
         Statement stmt = con.createStatement();
         
+        // Нужно экранировать сзапрос. Пока не знаю как
         ResultSet rs = stmt.executeQuery("SELECT name,(SELECT name FROM Places WHERE id=placeId) AS place FROM Devices");
         
         

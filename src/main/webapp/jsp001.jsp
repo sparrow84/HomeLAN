@@ -18,8 +18,13 @@
     <body>
         <h1>Table viewer.</h1>
         
-        <div position>
-        ${DevTable}
-        </div>>
+        <div class='first_table'>
+            ${DevTable}
+        </div>
+        
+        <div class='second_table'>
+            ${DevTable}
+        
+        </div>
     </body>
 </html>
