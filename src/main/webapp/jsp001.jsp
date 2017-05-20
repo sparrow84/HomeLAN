@@ -10,11 +10,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <style>
+            @import url("css/style.css");
+            
+        </style>
     </head>
     <body>
         <h1>Table viewer.</h1>
         
+        <div position>
         ${DevTable}
-
+        </div>>
     </body>
 </html>

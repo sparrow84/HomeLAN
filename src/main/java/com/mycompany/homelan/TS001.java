@@ -57,7 +57,7 @@ public class TS001 extends HttpServlet {
         // Создаём изменяймые строки для заиси результата запроса
         StringBuilder sb = new StringBuilder();
         
-        sb.append("<table border=1, align=left> <tr> <th><h2>Comp name</h2></th>   <th><h2>Place</h2></th> </tr>");
+        sb.append("<table> <tr> <th><h2>Comp name</h2></th>   <th><h2>Place</h2></th> </tr>");
         
         while (rs.next()){
             String name = rs.getString("name");
