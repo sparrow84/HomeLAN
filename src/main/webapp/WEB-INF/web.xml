@@ -4,16 +4,19 @@
     <servlet>
         <servlet-name>TS001</servlet-name>
         <servlet-class>com.mycompany.homelan.TS001</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     
     <servlet>
         <servlet-name>TS002</servlet-name>
         <servlet-class>com.mycompany.homelan.TS002</servlet-class>
+        <load-on-startup>2</load-on-startup>
     </servlet>
     
     <servlet>
         <servlet-name>TS003</servlet-name>
         <servlet-class>com.mycompany.homelan.TS003</servlet-class>
+        <load-on-startup>3</load-on-startup>
     </servlet>
     
     <servlet-mapping>

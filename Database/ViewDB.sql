@@ -1,7 +1,9 @@
--- SELECT * FROM Devices ORDER BY placeId;
--- SELECT * FROM Places;
+/**/
+SELECT * FROM Devices ORDER BY placeId;
+SELECT * FROM Places;
+/**/
 
-
+/** /
 SELECT
 	id
 	,name
@@ -17,3 +19,4 @@ SELECT
     ,(SELECT height/1000) AS H
 FROM Places;
 
+/**/
