@@ -16,19 +16,19 @@ tr:nth-child(even) {
 
 div.first_table {
   position: absolute; /* Абсолютное позиционирование */
-  overflow: auto;
-  left: 300px; 
-  top: 300px;
-  width: 250px; /* Ширина блока */
+  /*overflow: auto;*/
+  left: 500px; 
+  top: 30px;
+  /*width: 50px; /* Ширина блока */
  
-  border: 1px solid #000; /* Параметры рамки */
-  padding: 5px; /* Поля вокруг текста */
-  font-family: sans-serif; /* Рубленый шрифт */
-  font-size: 9pt; /* Размер шрифта */
+  /*border: 1px solid #000; /* Параметры рамки */
+  /*padding: 5px; /* Поля вокруг текста */
+  /*font-family: cursive; /*sans-serif; /* Рубленый шрифт */
+  /*font-size: 9pt; /* Размер шрифта */
   color: #333; /* Цвет текста */
-  background: #ECF5E4; /* Цвет фона */
-  margin-left: 500px;
-  padding-left: 500px;
+  /*background: #ECF5E4; /* Цвет фона */
+  /*margin-left: 50px; /* */
+  /*padding-left: 50px; /* */
 }
 
 

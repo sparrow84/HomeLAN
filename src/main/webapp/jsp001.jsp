@@ -22,9 +22,5 @@
             ${DevTable}
         </div>
         
-        <div class='second_table'>
-            ${DevTable}
-        
-        </div>
     </body>
 </html>
