@@ -22,5 +22,23 @@
             ${DevTable}
         </div>
         
+        <div class='buttons'>
+            <button>Кнопка 1</button></br>
+            <button>Кнопка 2</button></br>
+            <button>Кнопка 3</button></br>
+            <button>Кнопка 4</button></br>
+            <button>Кнопка 5</button>
+        </div>
+        
+        <div class='gafica1'>
+            
+            <canvas height="100" width="100">
+                
+                
+                
+            </canvas>
+            
+        </div>
+        
     </body>
 </html>

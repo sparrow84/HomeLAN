@@ -18,7 +18,7 @@ div.first_table {
   position: absolute; /* Абсолютное позиционирование */
   /*overflow: auto;*/
   left: 500px; 
-  top: 30px;
+  top: 80px;
   /*width: 50px; /* Ширина блока */
  
   /*border: 1px solid #000; /* Параметры рамки */
@@ -32,19 +32,27 @@ div.first_table {
 }
 
 
-div.second_table {
+div.buttons {
+  position: absolute; /* Абсолютное позиционирование */
+  /* overflow: auto;
+  /* width: 250px; /* Ширина блока */
+ 
+  /* border: 1px solid #000; /* Параметры рамки */
+  /* padding: 5px; /* Поля вокруг текста */
+  /* font-family: sans-serif; /* Рубленый шрифт */
+  /* font-size: 9pt; /* Размер шрифта */
+  /* color: #333; /* Цвет текста */
+  /* background: #ECF5E4; /* Цвет фона */
+  /* margin-left: 500px; /* */
+  /* padding-left: 500px; /* */
+}
+
+div.gafica1 {
   position: absolute; /* Абсолютное позиционирование */
   overflow: auto;
   width: 250px; /* Ширина блока */
- 
+  left: 10px; 
+  top: 300px;
   border: 1px solid #000; /* Параметры рамки */
-  padding: 5px; /* Поля вокруг текста */
-  font-family: sans-serif; /* Рубленый шрифт */
-  font-size: 9pt; /* Размер шрифта */
-  color: #333; /* Цвет текста */
-  background: #ECF5E4; /* Цвет фона */
-  margin-left: 500px;
-  padding-left: 500px;
+  
 }
-    
-    
