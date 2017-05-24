@@ -32,6 +32,14 @@
         
         <div class='gafica1'>
             
+            <svg>
+
+                <circle cx=”10” cy=”10” r=”10 >
+                
+                </circle>
+
+            </svg>
+            
             <canvas height="100" width="100">
                 
                 

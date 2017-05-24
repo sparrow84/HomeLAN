@@ -50,7 +50,7 @@ div.buttons {
 div.gafica1 {
   position: absolute; /* Абсолютное позиционирование */
   overflow: auto;
-  width: 250px; /* Ширина блока */
+  width: 400px; /* Ширина блока */
   left: 10px; 
   top: 300px;
   border: 1px solid #000; /* Параметры рамки */
