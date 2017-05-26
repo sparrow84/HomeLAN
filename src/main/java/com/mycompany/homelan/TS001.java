@@ -47,6 +47,7 @@ public class TS001 extends HttpServlet {
 //        String url = "jdbc:postgresql://localhost:5432/postgres";
 
         Connection con = DriverManager.getConnection(url, "root", "183461");
+//        Connection con = DriverManager.getConnection(url, "root", "183461");
 //        Connection con = DriverManager.getConnection(url, "postgres", "qwerty");
         
         Statement stmt = con.createStatement();
