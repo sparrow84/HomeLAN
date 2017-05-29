@@ -46,7 +46,7 @@ public class TS001 extends HttpServlet {
         String url = "jdbc:mysql://localhost:3306/home_lan_base?autoReconnect=true&useSSL=false";
 //        String url = "jdbc:postgresql://localhost:5432/postgres";
 
-        Connection con = DriverManager.getConnection(url, "root", "183461");
+        Connection con = DriverManager.getConnection(url, "dbadmin", "qwerty");
 //        Connection con = DriverManager.getConnection(url, "root", "183461");
 //        Connection con = DriverManager.getConnection(url, "postgres", "qwerty");
         
