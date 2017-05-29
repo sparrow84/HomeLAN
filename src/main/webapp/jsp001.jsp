@@ -12,13 +12,14 @@
         <title>JSP Page</title>
         <style>
             @import url("css/style.css");
-            
         </style>
+        <script src="js/jscript.js"></script>
     </head>
     <body>
+        <script src="js/jscript.js"></script>
         <h1>Table viewer.</h1>
         
-        <div class='first_table'>
+        <div class="first_table">
             ${DevTable}
         </div>
         
@@ -30,7 +31,7 @@
             <button>Кнопка 5</button>
         </div>
         
-        <div class='gafica1'>
+        <div class="gafica1">
             
             <svg>
 
@@ -48,7 +49,7 @@
             
         </div>
         
-        <div id="columns">
+        <div id="columns" class="columns">
             <div class="column" draggable="true"><header>A</header></div>
             <div class="column" draggable="true"><header>B</header></div>
             <div class="column" draggable="true"><header>C</header></div>

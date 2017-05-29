@@ -52,7 +52,7 @@ tr:nth-child(even) {
   overflow: auto;
   width: 400px; /* Ширина блока */
   left: 10px; 
-  top: 300px;
+  top: 400px;
   border: 1px solid #000; /* Параметры рамки */
   
 }
@@ -67,6 +67,14 @@ tr:nth-child(even) {
   -khtml-user-drag: element;
   -webkit-user-drag: element;
 }
+
+.columns {
+    position: absolute; /* Абсолютное позиционирование */
+    overflow: auto;
+    left: 10px;
+    top: 200px;
+}
+
 .column {
   height: 150px;
   width: 150px;
@@ -105,4 +113,8 @@ tr:nth-child(even) {
   -ms-border-top-right-radius: 10px;
   -moz-border-radius-topright: 10px;
   border-top-right-radius: 10px;
+}
+
+.column.over {
+  border: 2px dashed #000;
 }
