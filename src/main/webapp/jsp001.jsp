@@ -33,19 +33,19 @@
         
         <div class="gafica1">
             
-            <svg>
-
-                <circle cx=”10” cy=”10” r=”10 >
-                
-                </circle>
-
-            </svg>
+            <input type="text" value="Введи значение" onFocus="window.status='Введи чёнить'">
+			
+            <fieldset>
+		<legend>Что вам болше нравится?</legend>
+		<input type="radio" checked=1 name=1 value="Мороженное" onFocus="window.status='Вы выбрали мороженное'">Мороженное
+                <input type="radio" name=1 value="Шоколад" onFocus="window.status='Вы выбрали шоколад'">Шоколад</input>
+            </fieldset>
             
-            <canvas height="100" width="100">
-                
-                
-                
-            </canvas>
+            <form>
+		<input type="submit" value="Submit data" onClick="alert('Super JavaScript')">
+                <input TYPE="button" VALUE="Чё то надо написать тут" onClick="window.name='My name chaged! =)'">
+            </form>
+            
             
         </div>
         
