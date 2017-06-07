@@ -7,41 +7,46 @@ package com.mycompany.homelan;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author vva
- */
 public class TS003 extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
+        // Cоздаём Map и записываем туда параметры из request
+        Map<String, String[]> paramMap = request.getParameterMap();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // Строим страницу
+        response.setContentType("text/xml;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet TS003</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet TS003 at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            out.println("<!DOCTYPE xml>");
+            out.println("<request_detail>");
+            out.println("<client_info>");
+            out.println("<ip-address>" + request.getRemoteAddr() + "</ip-address>");
+            out.println("<user-agent>" + request.getHeader("User-agent") + "</user-agent>");
+            out.println("</client_info>");
+            
+            out.println(paramMap.toString());
+            
+            out.println("</request_detail>");
+            
         }
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
