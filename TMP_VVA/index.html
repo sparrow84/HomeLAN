@@ -1,0 +1,32 @@
+
+
+<?php
+
+if(isset($_POST) && !empty($_POST['data'])) {
+    var_dump(json_decode($_POST['data']));
+
+    die();
+}
+?>
+
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.ajax({
+        url:'index.php',
+        type:'POST',
+        data:{'data':JSON.stringify(["яблоко", "јпельсин", "—лива"])}
+    });
+});
+</script>
+<form action=""><input type="search" id="search-text"> <input type="submit"></form>
+qwe
+</br>
+ASD
+</body>
+</html>
+

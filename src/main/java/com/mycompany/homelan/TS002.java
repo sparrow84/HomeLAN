@@ -32,11 +32,9 @@ public class TS002 extends HttpServlet {
             
             // Разделяем числовые и строковые парамтры
             for (String sbsStr: values) {
-                if (isNum(sbsStr)) {
+                
                     sbNum.append("\n" + "<parameter name=\"" + key + "\">" + sbsStr + "</parameter>");
-                } else {
-                    sbStr.append("\n" + "<parameter name=\"" + key + "\">" + sbsStr + "</parameter>");
-                }
+                
             }
         }
         

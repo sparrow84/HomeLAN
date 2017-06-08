@@ -20,7 +20,7 @@ public class TS003 extends HttpServlet {
         // Cоздаём Map и записываем туда параметры из request
         Map<String, String[]> paramMap = request.getParameterMap();
         
-        
+        String dataFromGet = request.getParameter("data");
         
         
         
@@ -40,7 +40,13 @@ public class TS003 extends HttpServlet {
             out.println("<user-agent>" + request.getHeader("User-agent") + "</user-agent>");
             out.println("</client_info>");
             
+            out.println("<cli>");
             out.println(paramMap.toString());
+            out.println("</cli>");
+            
+            out.println("<cli>");
+            out.println("\n\n Data from Get   " + dataFromGet);
+            out.println("</cli>");
             
             out.println("</request_detail>");
             
