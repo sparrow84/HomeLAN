@@ -18,7 +18,7 @@ https://github.com/andreiled/mipt-cs-4sem/wiki/%D0%9F%D0%BE%D1%88%D0%B0%D0%B3%D0
 REM Before start
 git pull
 
-REM Now work
+REM Now work.
 
 REM After work
 git add *
