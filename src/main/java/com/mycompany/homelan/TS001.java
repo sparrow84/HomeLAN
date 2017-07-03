@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author vva
  */
-@WebServlet(name = "TS001", urlPatterns = {"/TS001"})
+@WebServlet(name = "TS001", urlPatterns = {"/TS001"}) // you don't need annotation if you web.xml use
 public class TS001 extends HttpServlet {
 
     /**
@@ -135,5 +135,4 @@ public class TS001 extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

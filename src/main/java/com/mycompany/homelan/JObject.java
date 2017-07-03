@@ -2,14 +2,14 @@
 package com.mycompany.homelan;
 
 public class JObject {
-
-     
     private String name;
     private int age;
     private String messages;
      
     // Пустой конструктор
-    public JObject() {} 
+    public JObject() {
+
+    }
     
     // Конструктор с параметрами
     public JObject(String name, int age, String messages) {
@@ -47,5 +47,4 @@ public class JObject {
         return "User [name=" + name + ", age=" + age + ", messages="
                 + messages + "]";
     }
-    
 }

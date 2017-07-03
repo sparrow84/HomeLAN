@@ -17,7 +17,7 @@ import java.sql.Statement;
  */
 public class DBWork {
     
-    public static void homeLANBase () throws ClassNotFoundException, SQLException {
+    public static void homeLANBase() throws ClassNotFoundException, SQLException {
     
         Class.forName("com.mysql.jdbc.Driver");
         

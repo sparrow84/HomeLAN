@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-    
+<web-app
+    version="3.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+>
     <servlet>
         <servlet-name>TS001</servlet-name>
         <servlet-class>com.mycompany.homelan.TS001</servlet-class>
@@ -18,6 +23,12 @@
         <servlet-class>com.mycompany.homelan.TS003</servlet-class>
         <load-on-startup>3</load-on-startup>
     </servlet>
+
+    <servlet>
+        <servlet-name>TrueServlet</servlet-name>
+        <servlet-class>com.mycompany.servlet.TrueServlet</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>TS001</servlet-name>
@@ -32,6 +43,11 @@
     <servlet-mapping>
         <servlet-name>TS003</servlet-name>
         <url-pattern>/TS003</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>TrueServlet</servlet-name>
+        <url-pattern>/trueservlet</url-pattern>
     </servlet-mapping>
     
     <session-config>
